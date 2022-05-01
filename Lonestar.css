@@ -1,0 +1,242 @@
+/* main color #228be6 
+#adb5bd*/
+/*
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "inter", sans-serif;
+  color: #343a40;
+  line-height: 1.5;
+  letter-spacing: 1.2;
+}
+
+.container {
+  /* display: grid;
+  grid-template-columns: repeat(12, 1fr); */
+  -ms-grid-row-align: center;
+}
+
+h3 {
+  font-weight: 700;
+}
+
+/* Title image */
+.Image_Title {
+  grid-column: 1/-1;
+  position: relative;
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.image_title_text {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  color: #f8f9fa;
+  letter-spacing: 0.5;
+  line-height: 1.6;
+  text-align: left;
+}
+
+.img_description {
+  font-size: 30px;
+  font-weight: 500;
+  letter-spacing: 0.5;
+}
+
+/* site nav */
+.site-nav {
+  grid-column: 1/-1;
+  padding: 12px 16px 12px 16px;
+  background-color: #fff;
+  border-bottom: 3px solid #4dabf7;
+}
+
+.site-nav li {
+  list-style: none;
+  font-size: 24px;
+  text-transform: uppercase;
+  padding-left: 40px;
+  width: max-content;
+  padding-right: 4px;
+  padding-left: 4px;
+  border-bottom: 0;
+}
+
+.site-nav a {
+  color: #4dabf7;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.site-nav a:hover,
+.site-nav a:active {
+  color: #66d9e8;
+  font-size: 30px;
+  font-weight: 700;
+  /* margin: 10px; */
+}
+
+.ul-nav {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.nav-home {
+  grid-column: 1/5;
+}
+
+.nav-phone {
+  grid-column: 11/12;
+}
+
+.nav-email {
+  grid-column: 12/-1;
+}
+/* end site nav */
+
+/* selling points */
+
+.description {
+  display: grid;
+  grid-column: 1/-1;
+  grid-template-columns: repeat(11, 1fr);
+  grid-row-gap: 48px;
+}
+
+.about-us {
+  display: grid;
+  grid-column: 3/10;
+  box-shadow: 0 7px 30px 0px rgba(173, 181, 189, 0.05);
+  margin-bottom: 36px;
+  border-radius: 2px;
+}
+.about-us-img {
+  grid-column: 3/5;
+  gap: 20px;
+  border-radius: 2px;
+}
+
+.about-us-text {
+  grid-column: 5/10;
+  margin-left: 24px;
+}
+
+.description-box {
+  border-radius: 2px;
+  padding: 12px;
+}
+
+.description-box:hover {
+  box-shadow: 0 7px 30px 0px rgba(173, 181, 189, 0.5);
+}
+
+.Saftey {
+  grid-column: 3/6;
+  box-shadow: 0 7px 30px 0px rgba(173, 181, 189, 0.2);
+  /* margin-bottom: 48px; */
+}
+
+.efficiency {
+  grid-column: 7/10;
+  box-shadow: 0px 7px 20px 0px rgba(173, 181, 189, 0.2);
+  /* margin-bottom: 48px; */
+}
+
+.experience {
+  grid-column: 3/6;
+  box-shadow: 0 7px 30px 0px rgba(173, 181, 189, 0.2);
+}
+.friendly {
+  grid-column: 7/10;
+  box-shadow: 0 7px 30px 0px rgba(173, 181, 189, 0.2);
+}
+
+/* Contact Us */
+
+.contact-us {
+  /* background-color: #4dabf7; */
+  margin-top: 48px;
+  padding: 32;
+}
+
+.contact-title {
+  text-align: center;
+  color: #4dabf7;
+  font-size: 36px;
+  text-transform: capitalize;
+}
+
+.ul-contact-us {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  border-top: 3px solid #4dabf7;
+  padding-top: 48px;
+}
+
+.contact-us a:link {
+  text-decoration: none;
+  color: #4dabf7;
+  font-size: 48px;
+  font-weight: 700;
+  border: 2px solid #4dabf7;
+  text-align: center;
+  background-color: #f8f9fa;
+  padding: 10px;
+  box-shadow: 0 7px 30px 0px rgba(173, 181, 189, 0.4);
+  display: block;
+}
+
+.contact-us li {
+  text-decoration: none;
+  list-style: none;
+}
+
+.contact-us li a:hover,
+.contact-us li a:active {
+  box-shadow: 0 7px 30px 0px rgba(173, 181, 189, 2);
+  cursor: pointer;
+  background-color: #fff;
+  border: 3px solid;
+  /* color: #66d9e8;
+  border: 3px solid #66d9e8; */
+}
+
+.contact-email p {
+  /* color: #4dabf7; */
+  font-size: 16px;
+}
+
+.contact-email {
+  grid-column: 3/4;
+}
+
+.contact-phone {
+  grid-column: 5/6;
+  width: 257px;
+}
+
+.contact-phone p {
+  /* color: #4dabf7; */
+  font-size: 16px;
+}
+
+footer {
+  background-color: #4dabf7;
+  padding: 20 10;
+  text-align: center;
+  font-size: 14px;
+  color: #1971c2;
+  /* margin-top: 48px; */
+}
